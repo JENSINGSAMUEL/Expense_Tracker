@@ -1,176 +1,139 @@
 
-# Expense Management System using MERN Stack
+Expense Management
 
-### Live Website: https://main.d1sj7cd70hlter.amplifyapp.com/
+Link: https://expense-tracker-app-three-beryl.vercel.app/
 
-### Vercel Link: https://expense-tracker-app-three-beryl.vercel.app/
+Here’s the content rewritten with the same meaning but in different words to avoid plagiarism:
 
-## Project Description:
+---
 
-    The Expense Management System is a web-based application designed to assist users in tracking and managing their daily expenses. This system is built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) to create a scalable, responsive, and user-friendly application.
+## Project Overview
 
-## Objectives:
+The **Expense Management System** is an online platform developed to help users monitor and control their everyday financial activities. Leveraging the **MERN stack** (MongoDB, Express.js, React.js, Node.js), this application ensures scalability, responsiveness, and ease of use.
 
-    1. Simplify expense tracking for individuals and organizations.
+---
 
-    2. Provide detailed insights into spending patterns to enable better financial management.
+## Goals:
 
-    3. Offer a platform for users to create, update, and delete expenses and categories.
+1. Simplify the process of tracking expenses for individuals and organizations.  
+2. Provide valuable insights into spending habits for improved budgeting.  
+3. Enable users to manage expenses and categories efficiently by adding, updating, or deleting them.  
+4. Offer detailed reports based on user-selected time frames and categories.
 
-    4. Generate comprehensive reports based on user-defined time periods and categories.
+---
 
-## Features
+## Core Functionalities:
 
+### **Authentication and Authorization**  
+- Facilitate secure user registration and login for personal accounts.  
+- Implement role-based access controls for administrative functions.
 
-- User Authentication and Authorization:
+### **Expense and Category Management**  
+- Allow users to add, modify, and delete expense records and categories.  
+- Provide tools to categorize expenses by date, type, and description.  
+- Support file attachments like receipts or other relevant documents.
 
-    Allow users to sign up and log in to their personal accounts using secure authentication mechanisms.
-Implement role-based access control for administrative tasks.
+### **Dashboard and Reporting**  
+- Offer an intuitive dashboard summarizing total expenses, spending by category, and recent transactions.  
+- Generate detailed reports, including visualizations such as pie charts and bar graphs, based on user-defined filters.
 
-- Expense and Category Management:
+### **Responsive Design**  
+- Ensure a seamless user experience across desktops, tablets, and smartphones with a clean interface.  
+- Leverage **React.js** for dynamic components and efficient state management.
 
-    Enable users to create, update, and delete expense entries and categories.
-Track expenses by date, category, and description.
-Support attaching receipts or other relevant documents to expense entries.
+---
 
-- Dashboard and Reporting:
+## Technical Framework:
 
-    Provide a visual dashboard displaying an overview of the user's expenses, including total expenses, expenses by category, and recent transactions.
+### **Frontend:**  
+- Build the interface with **React.js**, incorporating libraries like `tsparticles` for background effects, `unique-names-generator`, `react-datepicker`, and `moment`.  
+- Use frameworks like **Bootstrap** and **Material Icons** for a responsive design.
 
-    Generate reports based on selected date ranges and categories, displaying pie charts and bar graphs to help users understand their spending patterns.
-    
+### **Backend:**  
+- Develop a **RESTful API** using **Node.js** and **Express.js** for managing client requests.  
+- Use **JWT (JSON Web Tokens)** for secure authentication and authorization.  
 
-- Responsive User Interface:
+### **Database:**  
+- Store user data, expense records, and categories in **MongoDB**, a NoSQL database.  
+- Define and validate schemas using **Mongoose ORM**.
 
-    Design a clean, responsive user interface that works seamlessly across desktop, tablet, and mobile devices.
-    
-    Utilize React.js for building reusable UI components and managing state effectively.
+### **Deployment:**  
+- Host the frontend on **AWS** and the backend on **Render**.  
+- Set up **CI/CD pipelines** for automated builds and deployments.
 
+---
 
-## Technical Architecture:
+## How to Run Locally:
 
-- Frontend:
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/Priyanshu9898/Expense-Tracker-App
+   ```
+2. Navigate to the project folder:  
+   ```bash
+   cd Expense-Tracker-App
+   ```
+3. Set up the frontend:  
+   ```bash
+   cd frontend
+   npm install
+   ```
+4. Set up the backend:  
+   ```bash
+   cd backend
+   npm install
+   ```
+5. Start the servers:  
+   - Frontend:  
+     ```bash
+     npm start
+     ```
+   - Backend:  
+     ```bash
+     npm run dev
+     ```
 
-    Utilize React.js for building the user interface, tsparticle library for awesome background effect and used other libraries like unique-names-generator, react-datepicker, moment
+---
 
-    Implement responsive design using CSS frameworks like Bootstrap and Material-Icons.
+## Environment Configuration:
 
-- Backend:
+Create a `config.env` file in the backend's `config` folder with the following variables:  
+- `MONGO_URL`: Connection string for MongoDB.  
+- `PORT`: Backend server's port number.  
 
-    Use Node.js and Express.js to build a RESTful API for handling client requests and serving as the application's backend.
+---
 
-    Implement authentication and authorization using JSON Web Tokens (JWT) and middleware to protect endpoints.
+## Tech Stack:
 
-- Database:
+- **Frontend**: React, Redux, React-Bootstrap, Material Icons, tsparticles.  
+- **Backend**: Node.js, Express.js.  
+- **Database**: MongoDB.  
 
-    Store all data, including user information, expense entries, and categories, in MongoDB, a NoSQL database.
+---
 
-    Implement Mongoose ORM for schema definition and validation.
+## Screenshots:
 
-- Deployment:
+![Dashboard Screenshot](https://i.postimg.cc/6qLR3WNt/Expense-Management-System-Brave-19-04-2023-11-08-53.png)  
+![Report Screenshot](https://i.postimg.cc/Dy6L3wgc/Expense-Management-System-Brave-19-04-2023-11-15-46.png)  
 
-    Deploy the application to a cloud provider like AWS and render.
-    frontend has deployed on AWS and backend on Render.
+---
 
-    Set up Continuous Integration and Continuous Deployment (CI/CD) pipelines for automated builds and deployments.
-## Run Locally
+## Badges:
 
-Clone the project
-
-```bash
-  git clone https://github.com/Priyanshu9898/Expense-Tracker-App
-```
-
-Go to the project directory
-
-```bash
-  cd Expense-Tracker-App
-```
-
-Go to the frontend directory and Install dependencies
-
-```bash
-  cd frontend
-```
-```bash
-  npm install
-```
-
-Go to the backend directory and Install dependencies
-
-```bash
-  cd backend
-```
-```bash
-  npm install
-```
-
-Start the frontend server
-
-```bash
-  npm start
-```
-
-
-Start the backend server
-
-```bash
-  npm run dev
-```
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file in backend folder
-
-create config folder and add config.env file in it and all all env variables there.
-
-`MONGO_URL` : Your MongoDB Connection String
-
-`PORT`: PORT number
-
-
-## Tech Stack
-
-**Client:** React, Redux, react-bootstrap, Material Icons, tsparticles
-
-**Server:** Node, Express
-
-**Database:** MongoDB
-
-
-## Screenshots
-
-![App Screenshot](https://i.postimg.cc/6qLR3WNt/Expense-Management-System-Brave-19-04-2023-11-08-53.png)
-
-![App Screenshot](https://i.postimg.cc/DynLNXqZ/Expense-Management-System-Brave-19-04-2023-11-08-59.png)
-
-![App Screenshot](https://i.postimg.cc/Dy6L3wgc/Expense-Management-System-Brave-19-04-2023-11-15-46.png)
-
-![App Screenshot](https://i.postimg.cc/13YF47bn/Expense-Management-System-Brave-19-04-2023-11-15-54.png)
-
-![App Screenshot](https://i.postimg.cc/rwpWV2Z2/Expense-Management-System-Brave-19-04-2023-11-16-01.png)
-
-## Badges
-
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)  
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)  
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
+---
 
+## Useful Links:
 
+[![Portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Priyanshu9898/)  
+[![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/priyanshumalaviya/)  
+[![Twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Priyanshu2281)  
 
+---
 
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Priyanshu9898/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/priyanshumalaviya/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Priyanshu2281)
-[![Medium](https://img.shields.io/badge/medum-1DA1F2?style=for-the-badge&logo=medium&logoColor=black)](https://medium.com/@priyanshumalaviya9210)
-
-## Demo
-
-Insert gif or link to demo
 
 
 ## License
